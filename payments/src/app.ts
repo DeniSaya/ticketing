@@ -13,6 +13,11 @@ app.use(
     signed: false,
     secure: process.env.NODE_ENV !== 'test',
   })
+  // disable HTTPS checking
+  // cookieSession({
+  //   signed: false,
+  //   secure: false,
+  // })
 );
 app.use(currentUser);
 
